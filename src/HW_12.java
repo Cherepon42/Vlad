@@ -8,15 +8,7 @@ public class HW_12 {
             String str;
             while (reader.ready()) {
                 str = reader.readLine();
-                str = str.replace(",", " ");
-                str = str.replace(".", " ");
-                str = str.replace("=", " ");
-                str = str.replace("'", " ");
-                str = str.replace("--", " ");
-                str = str.replace("?", " ");
-                str = str.replace("\t", " ");
-                str = str.replace("!", " ");
-                String[] strings = str.split(" ");
+                String[] strings = str.split("[,=?\\\\ .'!\\[]");
                 for(String nextLine : strings) {
                     nextLine = nextLine.trim(); //System.out.println(nextLine);
                     if(maxStr.length() < nextLine.length()) { System.out.println(nextLine);
