@@ -1,8 +1,7 @@
 import java.util.ArrayDeque;
-import java.util.Queue;
 
 public class HW_13 {
-    private Queue<String> animals = new ArrayDeque<>();
+    private ArrayDeque<String> animals = new ArrayDeque<>();
 
     public HW_13() {
         animals.add("Alex");
