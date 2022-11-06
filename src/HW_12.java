@@ -10,7 +10,7 @@ public class HW_12 {
                 str = reader.readLine();
                 String[] strings = str.split("[,=?\\\\ .'!\\[]");
                 for(String nextLine : strings) {
-                    nextLine = nextLine.trim(); //System.out.println(nextLine);
+                    nextLine = nextLine.trim();
                     if(maxStr.length() < nextLine.length()) { System.out.println(nextLine);
                         maxStr = nextLine;
                     }
